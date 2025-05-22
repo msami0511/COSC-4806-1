@@ -14,7 +14,9 @@ if (!isset($_SESSION['authenticated']) || $_SESSION['authenticated'] == false){
   <body>
       <h1>Assignment 1</h1>
       <p>Welcome <?php echo $_SESSION['username'] ?></p>
-      <p><a href="/login.php"> Click to login</a></p>
-    
+      
   </body>
+
+  <footer>
+    <p><a href="/logout.php"> Click to logout</a></p>
 </html>
