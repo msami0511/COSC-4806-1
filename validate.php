@@ -19,7 +19,10 @@
     } else {
       $_SESSION['failed_attempts'] = $_SESSION['failed_attempts'] + 1;
     }
-    echo "Unsuccessful login attempt number: " . $_SESSION['failed_attempts'];
+    $_SESSION['error message'] = "Unsuccessful login attempt number: ". $_SESSION['failed_attempts'];
+    header('Location: /login.php');
+
+    
   }
   
   
